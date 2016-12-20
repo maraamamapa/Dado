@@ -48,7 +48,7 @@ public function guardarTirada($valor){
 public function imprimirTiradas(){
 	echo "Imprimir Valores" . "<br>";
 	foreach ($this->tiradas as $valor) {
-		echo $valor."<br>";
+		echo $valor."<br>";//mostrar el valor de las tiradas
 	}
 }
 
@@ -56,9 +56,9 @@ public function calcularMediaTiradas(){
 	$total=0;
 	echo "Calculo de la media:" ;
 	foreach ($this->tiradas as $valor) {
-		$total=$total+$valor;		
+		$total=$total+$valor;//al total se le va sumando el valor,y la variable va incrementando.		
 	}
-	return $total/sizeof($this->tiradas);
+	return round ($total/sizeof($this->tiradas));//el total se divide por el tamaño de las tiradas
 }
 }
 
