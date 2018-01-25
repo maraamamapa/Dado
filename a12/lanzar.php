@@ -14,5 +14,5 @@ for($i=1; $i<=12; $i++){ /*Quiero hacer 12 tiradas de dados, por lo tanto, estab
 $tirada1->imprimirTiradas();
 
 echo $tirada1->calcularMediaTiradas();
-echo"Hola";
+echo"Hola mundoooo";
 ?>
